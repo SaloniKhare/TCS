@@ -11,3 +11,10 @@ class Solution:
         return l
         
         
+import bisect
+
+def lowerBound(arr, target):
+    
+    # Using bisect_left to get the lower bound index
+    index = bisect.bisect_left(arr, target)
+    return index
